@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- If needed, broadcast static tf for robot root -->
+  <node pkg="haptic_control" type="fixed_tf_broadcaster.py"
+        name="fixed_tf_broadcaster" />
+<!--
+  <node pkg="haptic_control" type="convert_point_cloud.py"
+       name="pointcloud_converter" /> -->
+<!--
+  <node pkg="haptic_control" type="omni_to_ur5_sim.py"
+       name="omni_to_ur5" /> -->
+
+  <node pkg="haptic_control" type="ur5_ik.py"
+       name="ur5_ik" />
+
+</launch>
