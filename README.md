@@ -1,6 +1,6 @@
 **Haptic Control ROS Package**
 
-This repository contains a ROS node for using the PHANToM Omni to control the UR5 robotic arm in the simulated MoveIt! environment. It further allows the user to collect demonstrations of robotic manipulation around clutter, with point cloud scans of a tree displayed in simulation to model obstacles. Lastly, the code enables the validation of different path planning methods for solving the manipulation problem.
+This repository contains a ROS package for using the PHANToM Omni to control the UR5 robotic arm in the simulated MoveIt! environment. It further allows the user to collect demonstrations of robotic manipulation around clutter, with point cloud scans of a tree displayed in simulation to model obstacles. Lastly, the code enables the validation of different path planning methods for solving the manipulation problem.
 
 **Additional Requirements**
 
