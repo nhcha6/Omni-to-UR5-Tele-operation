@@ -73,12 +73,6 @@ class OmniKinematics():
 		# return Jacobian
 		return J0
 
-
-# if __name__ == '__main__':
-#     omniUR5Object = OmniKinematics()
-#     J0 = omniUR5Object.jacobian(omniUR5Object.omni_js)
-#     print(J0)
-#     print(np.dot(J0, [-0.4, 0 ,0 ,0,0 ,0]))
     
 
 
