@@ -12,13 +12,7 @@ import tf
 class ConvertPointCloud():
     # initialise shared variables needed for control
     def __init__(self, scan_path, no_display=False):
-        # In ROS, nodes are uniquely named. If two nodes with the same
-        # name are launched, the previous one is kicked off. The
-        # anonymous=True flag means that rospy will choose a unique
-        # name for our 'listener' node so that multiple listeners can
-        # run simultaneously.
-        # rospy.init_node('pointcloud_converter', anonymous=True)
-
+        # declare publisher for point cloud data, to be read by Rviz
         self.pub = rospy.Publisher('point_cloud', PointCloud2, queue_size=10)
 
         self.all_data = []
@@ -78,6 +72,3 @@ class ConvertPointCloud():
 
         self.all_data = all_data_new
         self.all_data_array = all_data_array_new
-
-# if __name__ == '__main__':
-#     convert_pointcloud = ConvertPointCloud('/home/nic/catkin_ws/src/haptic_control/scripts/bagfiles/APPLE TREE.bag')
